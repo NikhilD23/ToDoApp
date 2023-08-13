@@ -38,7 +38,7 @@ def about():
     # return 'Hello, World!'
 
 @app.route('/update/<int:sno>', methods=['GET','POST'])
-def update(sno):
+def update(sno):    
     if request.method=='POST':
         title = request.form['title']
         desc = request.form['desc']
